@@ -18,6 +18,7 @@ progress-bar() {
 }
 
 clear
+echo "<< Initiating NeuVector update to 5.0.0 >>"
 
 kubectl delete clusterrole neuvector-binding-customresourcedefinition
 kubectl create clusterrole neuvector-binding-customresourcedefinition --verb=watch,create,get,update --resource=customresourcedefinitions
